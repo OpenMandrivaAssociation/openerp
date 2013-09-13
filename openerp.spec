@@ -11,7 +11,6 @@ Group:      Networking/WWW
 Summary:    Business Applications Server
 URL:        http://www.openerp.com
 BuildArch:  noarch
-#Source0:    http://nightly.openerp.com/6.1/releases/openerp-%%{version}%%{?oe_rel}.tar.gz
 Source0:    http://nightly.openerp.com/6.1/nightly/src/openerp-%{version}-%{oe_rel}.tar.gz
 Source1:    openerp.service
 Source2:    openerp-gen-cert
@@ -58,6 +57,7 @@ Requires:   PyYAML
 
 Obsoletes:  openerp-mpl  <= %{version}
 Provides:   openerp6
+Provides:   openerp-server
 
 BuildRequires:  desktop-file-utils
 BuildRequires:  python-libxslt
